@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max's CrystalCollector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+<h1>Crystals Collector!</h1>
+
+<p id="instructions">You will be given a random number at the start of the game. <br> There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. <br> You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. <br> The value of each crystal is hidden from you until you click on it. <br> Each time when the game starts, the game will change the values of each crystal.</p>
+
+<div id="randomNumber"></div>
+
+<p id="stats">Wins: <span>0</span><br>Loses: <span>0</span></p>
+
+<div id="crystal">
+<div id="crystal1"></div>
+<div id="crystal2"></div>
+<div id="crystal3"></div>
+<div id="crystal4"></div>
+</div>
+
+<p id="score">Your total score is: </p>
+<div id="total"></div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</html>
