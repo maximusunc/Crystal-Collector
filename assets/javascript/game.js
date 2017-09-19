@@ -49,7 +49,30 @@ var randomNumbers = new Object();
 			reset();
 		}
 	};
-
+	$("#crystal1 img").mouseenter(function() {
+		$(this).animate({height: "175px", width: "175px"});
+	});
+	$("#crystal2 img").mouseenter(function() {
+		$(this).animate({height: "175px", width: "175px"});
+	});
+	$("#crystal3 img").mouseenter(function() {
+		$(this).animate({height: "175px", width: "175px"});
+	});
+	$("#crystal4 img").mouseenter(function() {
+		$(this).animate({height: "175px", width: "175px"});
+	});
+	$("#crystal1 img").mouseleave(function() {
+		$(this).animate({height: "150px", width: "150px"});
+	});
+	$("#crystal2 img").mouseleave(function() {
+		$(this).animate({height: "150px", width: "150px"});
+	});
+	$("#crystal3 img").mouseleave(function() {
+		$(this).animate({height: "150px", width: "150px"});
+	});
+	$("#crystal4 img").mouseleave(function() {
+		$(this).animate({height: "150px", width: "150px"});
+	});
 	$("#crystal").on("click", "div", function() {
 		var crystalClick = $(this).attr('id');
 		// add the crystal number clicked to a total

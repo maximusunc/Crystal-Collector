@@ -11,24 +11,11 @@ h1 {
 	padding: 20px 0px;
 }
 #crystal1, #crystal2, #crystal3, #crystal4{
-	width: 150px;
 	height: 150px;
-	background-color: blue;
+	width: 150px;
 	float: left;
 	border: 2px white solid;
-	margin: 10px;
-}
-#crystal1 {
-	background-image: url("../images/orange-crystal.jpeg");
-}
-#crystal2 {
-	background-image: url("../images/purple-crystal.jpeg");
-}
-#crystal3 {
-	background-image: url("../images/green-crystal.jpeg");
-}
-#crystal4 {
-	background-image: url("../images/blue-crystal.jpeg");
+	margin: 30px;
 }
 #crystal {
 	clear: both;
