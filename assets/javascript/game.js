@@ -62,32 +62,23 @@ var randomNumbers = new Object();
 		$("#total").text(total += randomNumbers[crystalClick]);
 		checker();
 	});
+	var big = function() {
+		$(this).animate({height: "175px", width: "175px"});
+	};
+	var small = function() {
+		$(this).animate({height: "150px", width: "150px"});
+	};
+	
 
 	// Animation of crystals on hover
-	$("#crystal1 img").mouseenter(function() {
-		$(this).animate({height: "175px", width: "175px"});
-	});
-	$("#crystal2 img").mouseenter(function() {
-		$(this).animate({height: "175px", width: "175px"});
-	});
-	$("#crystal3 img").mouseenter(function() {
-		$(this).animate({height: "175px", width: "175px"});
-	});
-	$("#crystal4 img").mouseenter(function() {
-		$(this).animate({height: "175px", width: "175px"});
-	});
-	$("#crystal1 img").mouseleave(function() {
-		$(this).animate({height: "150px", width: "150px"});
-	});
-	$("#crystal2 img").mouseleave(function() {
-		$(this).animate({height: "150px", width: "150px"});
-	});
-	$("#crystal3 img").mouseleave(function() {
-		$(this).animate({height: "150px", width: "150px"});
-	});
-	$("#crystal4 img").mouseleave(function() {
-		$(this).animate({height: "150px", width: "150px"});
-	});
+	$("#crystal1 img").mouseenter(big);
+	$("#crystal2 img").mouseenter(big);
+	$("#crystal3 img").mouseenter(big);
+	$("#crystal4 img").mouseenter(big);
+	$("#crystal1 img").mouseleave(small);
+	$("#crystal2 img").mouseleave(small);
+	$("#crystal3 img").mouseleave(small);
+	$("#crystal4 img").mouseleave(small);
 	// End of animation
 
 
