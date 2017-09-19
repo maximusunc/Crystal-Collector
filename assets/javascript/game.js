@@ -40,15 +40,30 @@ var randomNumbers = new Object();
 			console.log("win");
 			wins += 1;
 			$("#wins").text(wins);
+			var audio = $("#sound2")[0];
+			audio.play();
 			reset();
 		// if the total goes above the first random number, you lose
 		} else if (total > randomNumbers.randomNumber) {
 			console.log("lose");
 			loses += 1;
 			$("#loses").text(loses);
+			var audio = $("#sound3")[0];
+			audio.play();
 			reset();
 		}
 	};
+
+	$("#crystal").on("click", "div", function() {
+		var crystalClick = $(this).attr('id');
+		var audio = $("#sound1")[0];
+		audio.play();
+		// add the crystal number clicked to a total
+		$("#total").text(total += randomNumbers[crystalClick]);
+		checker();
+	});
+
+	// Animation of crystals on hover
 	$("#crystal1 img").mouseenter(function() {
 		$(this).animate({height: "175px", width: "175px"});
 	});
@@ -73,12 +88,8 @@ var randomNumbers = new Object();
 	$("#crystal4 img").mouseleave(function() {
 		$(this).animate({height: "150px", width: "150px"});
 	});
-	$("#crystal").on("click", "div", function() {
-		var crystalClick = $(this).attr('id');
-		// add the crystal number clicked to a total
-		$("#total").text(total += randomNumbers[crystalClick]);
-		checker();
-	});
+	// End of animation
+
 
 	reset();
 
