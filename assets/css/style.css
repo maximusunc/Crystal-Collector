@@ -14,8 +14,10 @@ h1 {
 	height: 150px;
 	width: 150px;
 	float: left;
-	border: 2px white solid;
 	margin: 30px;
+}
+img {
+	border-radius: 100%;
 }
 #crystal {
 	clear: both;
