@@ -58,6 +58,10 @@ var randomNumbers = new Object();
 		var crystalClick = $(this).attr('id');
 		var audio = $("#sound1")[0];
 		audio.play();
+		// makes crystals shake when clicked
+		$(this).addClass('shake animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd onanimationend animationend', function(){
+    		$(this).removeClass();
+		});
 		// add the crystal number clicked to a total
 		$("#total").text(total += randomNumbers[crystalClick]);
 		checker();
